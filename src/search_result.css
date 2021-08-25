@@ -199,11 +199,58 @@ nav .navigation {
     align-items: center;
     gap: .3rem;
     padding-bottom: .7rem;
+    cursor: pointer;
 }
 
 .links.actived {
     border-bottom: 3px solid #1a73e8;
     color: #1a73e8;
+}
+
+.img-links {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+#search.img-links {
+    background-image: url(../assets/icons/search.svg);
+}
+
+#search.img-links.actived {
+    background-image: url(../assets/icons/search_actived.svg);
+}
+
+#videos.img-links {
+    background-image: url(../assets/icons/video.svg);
+}
+
+#videos.img-links.actived {
+    background-image: url(../assets/icons/video_actived.svg);
+}
+
+#images.img-links {
+    background-image: url(../assets/icons/image.svg);
+}
+
+#images.img-links.actived {
+    background-image: url(../assets/icons/image_actived.svg);
+}
+
+#news.img-links {
+    background-image: url(../assets/icons/news.svg);
+}
+
+#news.img-links.actived {
+    background-image: url(../assets/icons/news_actived.svg);
+}
+
+#shopping.img-links {
+    background-image: url(../assets/icons/local_offer.svg);
+}
+
+#shopping.img-links.actived {
+    background-image: url(../assets/icons/local_offer_actived.svg);
 }
 
 .links img {

@@ -133,70 +133,30 @@
     <main>
       <nav>
         <div class="navigation">
-          <div class="links actived">
-            <img
-              class="no-actived"
-              src="./assets/icons/search.svg"
-              alt="Pesquisar"
-            />
-            <img
-              class="actived"
-              src="./assets/icons/search_actived.svg"
-              alt="Pesquisar"
-            />
-            <a href="#" class="actived">Todas</a>
+          <div class="links actived" onclick="changeColorLinks('search')"
+          data-color="search">
+            <div id="search" data-color="search" class="img-links  actived"></div>
+            <a href="#" data-color="search" class="actived">Todas</a>
           </div>
-          <div class="links">
-            <img
-              class="actived"
-              src="./assets/icons/video.svg"
-              alt="Pesquisar"
-            />
-            <img
-              class="no-actived"
-              src="./assets/icons/video_actived.svg"
-              alt="Pesquisar"
-            />
-            <a href="#">Vídeos</a>
+          <div class="links" onclick="changeColorLinks('videos')"
+          data-color="videos">
+            <div id="videos" data-color="videos" class="img-links"></div>      
+            <a href="#" data-color="videos">Vídeos</a>
           </div>
-          <div class="links">
-            <img
-              class="actived"
-              src="./assets/icons/image.svg"
-              alt="Pesquisar"
-            />
-            <img
-              class="no-actived"
-              src="./assets/icons/image_actived.svg"
-              alt="Pesquisar"
-            />
-            <a href="#" class="">Imagens</a>
+          <div class="links" onclick="changeColorLinks('images')"
+          data-color="images">
+            <div id="images" data-color="images" class="img-links"></div>            
+            <a href="#" data-color="images">Imagens</a>
           </div>
-          <div class="links">
-            <img
-              class="actived"
-              src="./assets/icons/news.svg"
-              alt="Pesquisar"
-            />
-            <img
-              class="no-actived"
-              src="./assets/icons/news_actived.svg"
-              alt="Pesquisar"
-            />
-            <a href="#">Notícias</a>
+          <div class="links" onclick="changeColorLinks('news')"
+          data-color="news">
+            <div id="news" data-color="news" class="img-links"></div>            
+            <a href="#" data-color="news">Notícias</a>
           </div>
-          <div class="links">
-            <img
-              class="actived"
-              src="./assets/icons/local_offer.svg"
-              alt="Pesquisar"
-            />
-            <img
-              class="no-actived"
-              src="./assets/icons/local_offer_actived.svg"
-              alt="Pesquisar"
-            />
-            <a href="#">Shopping</a>
+          <div class="links" onclick="changeColorLinks('shopping')"
+          data-color="shopping">
+            <div id="shopping" data-color="shopping" class="img-links"></div>
+            <a href="#" data-color="shopping">Shopping</a>
           </div>
           <div class="links">
             <img src="./assets/icons/more_vert.svg" alt="Pesquisar" />

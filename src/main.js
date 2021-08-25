@@ -50,3 +50,17 @@ buttonApps.addEventListener('click', () => {
   }
   appearApps()
 })
+
+// mudar os cores dos links quando clicados
+function changeColorLinks(value) {
+  document.querySelectorAll('[data-color]').forEach(item => {
+    const itemColor = item.getAttribute('data-color')
+
+    if (itemColor === value) {
+      item.classList.add('actived')
+      appsRemoveWhenCall()
+    } else {
+      item.classList.remove('actived')
+    }
+  })
+}
