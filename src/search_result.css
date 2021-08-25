@@ -372,12 +372,16 @@ nav .navigation {
     width: 620px;
 }
 
+.container-content div:first-child {
+    padding-top: 0;
+}
+
 .box-content {
     margin: 0 0 .5rem;
     padding-top: 1rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: .5rem
+    gap: .5rem;
 }
 
 .box-content a {
