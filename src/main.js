@@ -1,5 +1,6 @@
 let input = document.querySelector('#search')
 const clear = document.querySelector('.clear')
+let main = document.querySelector('main')
 const apps = document.querySelector('.apps-google')
 const buttonApps = document.querySelector('.button-apps')
 
@@ -29,25 +30,19 @@ function clearInput() {
   })
 }
 
-if(buttonApps) {
-  buttonApps.addEventListener('click', () => {
-      appearApps()
-  })
-} else {
-  main.addEventListener('click', () => {
-    console.log('ola')
-    buttonApps.classList.remove('button-actived')
-    apps.classList.remove('box-actived')
-  })
-}
-
-function appearApps() {
-  buttonApps.classList.toggle('button-actived')
-  apps.classList.toggle('box-actived')
-
-  const appear = document.querySelector('.apps-google.box-actived')
-
-  if(appear) {
-      /* appsRemoveByClick() */
+buttonApps.addEventListener('click', () => {
+  function appearApps() {
+    buttonApps.classList.toggle('button-actived')
+    apps.classList.toggle('box-actived')
+    return appsRemoveByClick()
   }
-}
+
+  function appsRemoveByClick() {
+    main.addEventListener('click', () => {
+      buttonApps.classList.remove('button-actived')
+      apps.classList.remove('box-actived')
+    })
+  }
+
+  appearApps()
+})
