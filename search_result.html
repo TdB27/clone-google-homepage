@@ -25,33 +25,32 @@
           </a>
         </div>
         <div class="search">
-          <form action="\search" method="GET">
-            <div class="search">
-              <label for="search">Pesquisar</label>
-              <div class="input">
-                <!-- <img id="icon-search" src="./assets/icons/search.svg" alt="Pesquisar"> -->
-                <input id="search" class="receive-value" type="text" />
-                <div id="clear">
-                  <img src="./assets/icons/clear.svg" alt="Limpar" />
-                </div>
-                <img src="./assets/icons/keyboard.svg" alt="Teclado" />
-                <img src="./assets/icons/microphone.svg" alt="Teclado" />
-                <img src="./assets/icons/search_blue.svg" alt="Pesquisar" />
-                <!-- <img src="https://web.archive.org/web/20191130234609im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Microfone"> -->
-              </div>
+          <label for="search">Pesquisar</label>
+          <div class="input">
+            <!-- <img id="icon-search" src="./assets/icons/search.svg" alt="Pesquisar"> -->
+            <input id="search" class="receive-value" type="text" />
+            <div class="clear" aria-label="Limpar">
+              <img src="./assets/icons/clear.svg" alt="Limpar" />
             </div>
-          </form>
+            <a href="#" aria-label="Ferramentas de inserção de texto">
+              <img src="./assets/icons/keyboard.svg" alt="Teclado" />
+            </a>
+            <a href="#" aria-label="Pesquisas por voz">
+              <img src="./assets/icons/microphone.svg" alt="Microfone" />
+            </a>
+            <img src="./assets/icons/search_blue.svg" alt="Pesquisar" />
+            <!-- <img src="https://web.archive.org/web/20191130234609im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Microfone"> -->
+          </div>
         </div>
       </div>
       <div class="links-login">
-        <a href="#">
+        <a href="#" aria-label="Configurações">
           <img
             src="./assets/icons/settings.svg"
             alt="Configurações"
-            title="Configurações"
           />
         </a>
-        <a href="#">
+        <a href="#" aria-label="Google apps">
           <img src="./assets/icons/apps.svg" alt="Google Apps" />
         </a>
         <a href="#">
@@ -228,5 +227,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./src/main.js"></script>
   </body>
 </html>

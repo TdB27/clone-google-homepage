@@ -41,11 +41,12 @@ body {
 }
 
 .search .input {
-    width: 100%;
+    max-width: 100%;
     height: 3rem;
     border-radius: 2rem;
     font: 1.2rem 'arial', sans-serif;
     padding: 0 1rem;
+    margin-right: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -70,7 +71,11 @@ body {
     cursor: pointer;
 }
 
-.input #clear {
+.input .clear {
+    display: none;
+}
+
+.input .clear.box-actived {
     width: calc(25px + 1rem);
     display: flex;
     justify-content: flex-start;
@@ -80,6 +85,42 @@ body {
 
 .search input:focus {
     outline:none
+}
+
+.input a {
+  display: flex;
+}
+
+[aria-label] {
+  position: relative;
+}
+
+.links-login a:nth-child(1)[aria-label]::after,
+.links-login a:nth-child(2)[aria-label]::after,
+[aria-label]::after {
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 150%;
+  z-index: 5000;
+  pointer-events: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: rgb(29, 29, 29);
+}
+
+.links-login a:nth-child(1)[aria-label]::after,
+.links-login a:nth-child(2)[aria-label]::after {
+    top: 115%;
+    border-radius: .3rem;
+}
+
+.links-login a:nth-child(1)[aria-label]:hover::after,
+.links-login a:nth-child(2)[aria-label]:hover::after,
+[aria-label]:hover::after {
+  display: block;
 }
 
 .links-login {
@@ -100,7 +141,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: circle();
+    border-radius: 2rem;
 }
 
 .links-login a:hover{
