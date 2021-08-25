@@ -17,7 +17,7 @@ input.onkeyup = function () {
   if (inputValue === '') {
     clear.classList.remove('box-actived')
   }
-
+  appsRemoveWhenCall()
   clearInput()
   return inputValue
 }
@@ -26,8 +26,20 @@ function clearInput() {
   clear.addEventListener('click', () => {
     input.value = ''
     clear.classList.remove('box-actived')
+    appsRemoveWhenCall()
     return
   })
+}
+
+function appsRemoveByClick() {
+  main.addEventListener('click', () => {
+    appsRemoveWhenCall()
+  })
+}
+
+function appsRemoveWhenCall() {
+  buttonApps.classList.remove('button-actived')
+  apps.classList.remove('box-actived')
 }
 
 buttonApps.addEventListener('click', () => {
@@ -36,13 +48,5 @@ buttonApps.addEventListener('click', () => {
     apps.classList.toggle('box-actived')
     return appsRemoveByClick()
   }
-
-  function appsRemoveByClick() {
-    main.addEventListener('click', () => {
-      buttonApps.classList.remove('button-actived')
-      apps.classList.remove('box-actived')
-    })
-  }
-
   appearApps()
 })

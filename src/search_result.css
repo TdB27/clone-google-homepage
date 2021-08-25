@@ -102,7 +102,7 @@ body {
   display: none;
   position: absolute;
   top: 150%;
-  z-index: 5000;
+  z-index: 900;
   pointer-events: none;
   padding: 8px 10px;
   text-decoration: none;
@@ -115,6 +115,10 @@ body {
 .links-login a:nth-child(2)[aria-label]::after {
     top: 115%;
     border-radius: .3rem;
+}
+
+.links-login a:nth-child(2)[aria-label]::after {
+    z-index: 1000;
 }
 
 .links-login a:nth-child(1)[aria-label]:hover::after,

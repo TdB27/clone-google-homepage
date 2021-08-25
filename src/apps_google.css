@@ -35,7 +35,6 @@
 }
 
 .apps {
-    width: 85px;
     padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -51,7 +50,7 @@
 }
   
 .apps img {
-    width: 90%;
+    width: 47.69px;
 }
   
 .apps p {
