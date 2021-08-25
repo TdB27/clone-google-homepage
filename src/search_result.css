@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font: .93rem 'Arial', sans-serif;
+}
+
+body {
+    width: 100vw;
+}
+
+.container-header {
+    padding: 2rem 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.img-google {
+    width: 6.25rem;
+    height: 2.06rem;
+}
+
+.img-google img {
+    width: 100%;
+    padding: 0;
+}
+
+.search {
+    width: 650px;
+}
+
+.search label {
+    display: none
+}
+
+.search .input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    font: 1.2rem 'arial', sans-serif;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    box-shadow: 0 2px 3px 1.5px hsl(0, 0%, 83%);
+}
+
+.search .input:hover {
+    box-shadow: 0 2px 5px 1px hsl(0, 0%, 83%);
+}
+
+.input input {
+    width: 90%;
+    height: 85%;
+    font: 1.2rem 'Arial', sans-serif;
+    border: none;
+}
+
+.input img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.input #clear {
+    width: calc(25px + 1rem);
+    display: flex;
+    justify-content: flex-start;
+    border-right: 1px solid hsl(0, 0%, 83%)
+}
+
+
+.search input:focus {
+    outline:none
+}
+
+.links-login {
+    display: flex;
+    gap: .7rem;
+    align-items: center
+}
+
+.links-login a {
+    text-decoration: none;
+}
+
+
+.links-login a:nth-child(1),
+.links-login a:nth-child(2) {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle();
+}
+
+.links-login a:hover{
+    background: hsl(0, 0%, 95%);
+}
+
+.links-login a img {
+    width: 25px;
+    height: 25px;
+}
+
+header button {
+    padding: .5rem 1rem;
+    font: .9rem 'Arial', sans-serif;
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer
+}
+
+header button:hover {
+    background: hsl(214, 82%, 55%);
+    box-shadow: 0 0 1px 0 hsl(214, 82%, 55%)
+}
+
+/* ---- MAIN ---- */
+nav,
+nav .navigation,
+.navigation .links {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: 12rem;
+    margin-top: 2rem;
+    gap: 6rem;
+}
+
+nav .navigation {
+    gap: 1rem
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding-bottom: .7rem;
+}
+
+.links.actived {
+    border-bottom: 3px solid #1a73e8;
+    color: #1a73e8;
+}
+
+.links img {
+    width: 15px;
+    height: 15px
+}
+
+.links img.no-actived {
+    display:none
+}
+
+.links img.actived {
+    display:block
+}
+
+.links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 50%)
+}
+
+.links a.actived {
+    color: #1a73e8;
+}
+
+.tools button {
+    padding: .3rem .7rem;
+    margin-bottom: .7rem;
+    color: hsl(0, 0%, 50%);
+    background: none;
+    border: none;
+    cursor: pointer
+}
+
+.tools button:hover {
+    padding: .25rem .64rem;
+    margin-bottom: .66rem;
+    color: #000;
+    background: hsl(0, 0%, 97%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: .1rem;
+    box-shadow: 0 1px 0 0 hsl(0, 0%, 83%)
+}
+
+.tools .button-actived,
+.tools .button-actived:hover {
+    padding: .25rem .64rem;
+    margin-bottom: .66rem;
+    color: hsl(0, 0%, 50%);
+    border: 1px solid hsl(220, 9%, 87%);
+    border-radius: .1rem;
+    background: linear-gradient(to bottom, hsl(210, 17%, 98%),hsl(220, 9%, 87%));
+    box-shadow: inset 0 1px 2px 0 hsl(0, 0%, 83%);
+}
+
+.separates-line {
+    width: 100%;
+    border-top: .5px hsl(0, 0%, 90%) solid;
+    margin: -3px;
+}
+
+.about {
+    margin-left: 12rem;
+    padding: 1rem 0;
+}
+
+.about .p {
+    display: none;
+}
+
+.about .p.actived {
+    display: block
+}
+
+.about .p p {
+    color: hsl(0, 0%, 50%)
+}
+
+.about .menu-tools {
+    display: none;
+}
+
+.about .menu-tools.actived {
+    display: flex;
+    gap: 1rem
+}
+
+.menu-tools .link-tools {
+    display: flex;
+    align-items: center
+}
+
+.link-tools a {
+    color: hsl(0, 0%, 50%);
+    text-decoration: none;
+}
+
+.link-tools img {
+    width: 20px;
+    height: 20px;
+}
+
+.container-content {
+    margin-left: 12rem;
+    width: 620px;
+}
+
+.box-content {
+    margin: 0 0 .5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5rem
+}
+
+.box-content a {
+    text-decoration: none;
+}
+
+.box-content p a {
+    display: inline-block;
+    color: #000;
+}
+
+.box-content h2 a {
+    padding-top: .6rem;
+    color: hsl(240, 86%, 36%);
+    font-size: 1.25rem;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.box-content p {
+    line-height: 1.4rem;
+    color: hsl(213, 6%, 32%);
+}

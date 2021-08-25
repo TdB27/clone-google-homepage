@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/Google_favicon.png"
+    />
+    <link rel="stylesheet" href="./src/search_result.css" />
+    <title>Resultado da pesquisa</title>
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="logo-search">
+        <div class="img-google">
+          <a href="./index.html">
+            <img
+              src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+              alt="Google Image"
+            />
+          </a>
+        </div>
+        <div class="search">
+          <form action="\search" method="GET">
+            <div class="search">
+              <label for="search">Pesquisar</label>
+              <div class="input">
+                <!-- <img id="icon-search" src="./assets/icons/search.svg" alt="Pesquisar"> -->
+                <input id="search" class="receive-value" type="text" />
+                <div id="clear">
+                  <img src="./assets/icons/clear.svg" alt="Limpar" />
+                </div>
+                <img src="./assets/icons/keyboard.svg" alt="Teclado" />
+                <img src="./assets/icons/microphone.svg" alt="Teclado" />
+                <img src="./assets/icons/search_blue.svg" alt="Pesquisar" />
+                <!-- <img src="https://web.archive.org/web/20191130234609im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Microfone"> -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="links-login">
+        <a href="#">
+          <img
+            src="./assets/icons/settings.svg"
+            alt="Configurações"
+            title="Configurações"
+          />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/apps.svg" alt="Google Apps" />
+        </a>
+        <a href="#">
+          <button class="btn">Fazer Login</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <div class="navigation">
+          <div class="links actived">
+            <img
+              class="no-actived"
+              src="./assets/icons/search.svg"
+              alt="Pesquisar"
+            />
+            <img
+              class="actived"
+              src="./assets/icons/search_actived.svg"
+              alt="Pesquisar"
+            />
+            <a href="#" class="actived">Todas</a>
+          </div>
+          <div class="links">
+            <img
+              class="actived"
+              src="./assets/icons/video.svg"
+              alt="Pesquisar"
+            />
+            <img
+              class="no-actived"
+              src="./assets/icons/video_actived.svg"
+              alt="Pesquisar"
+            />
+            <a href="#">Vídeos</a>
+          </div>
+          <div class="links">
+            <img
+              class="actived"
+              src="./assets/icons/image.svg"
+              alt="Pesquisar"
+            />
+            <img
+              class="no-actived"
+              src="./assets/icons/image_actived.svg"
+              alt="Pesquisar"
+            />
+            <a href="#" class="">Imagens</a>
+          </div>
+          <div class="links">
+            <img
+              class="actived"
+              src="./assets/icons/news.svg"
+              alt="Pesquisar"
+            />
+            <img
+              class="no-actived"
+              src="./assets/icons/news_actived.svg"
+              alt="Pesquisar"
+            />
+            <a href="#">Notícias</a>
+          </div>
+          <div class="links">
+            <img
+              class="actived"
+              src="./assets/icons/local_offer.svg"
+              alt="Pesquisar"
+            />
+            <img
+              class="no-actived"
+              src="./assets/icons/local_offer_actived.svg"
+              alt="Pesquisar"
+            />
+            <a href="#">Shopping</a>
+          </div>
+          <div class="links">
+            <img src="./assets/icons/more_vert.svg" alt="Pesquisar" />
+            <a href="#">Mais</a>
+          </div>
+        </div>
+        <div class="tools">
+          <button class="">Ferramentas</button>
+          ativar o button: button-actived
+        </div>
+      </nav>
+
+      <div class="separates-line"></div>
+
+      <div class="about">
+        ativar o menu-tools
+        <div class="p actived">
+          <p>Aproximadamente 143.000.000 resultados (0,66 segundos)</p>
+        </div>
+        <div class="menu-tools">
+          <div class="link-tools">
+            <a href="#">Em qualquer idioma</a>
+            <img
+              src="./assets/icons/arrow_drop_down.svg"
+              alt="Seta para baixo"
+            />
+          </div>
+          <div class="link-tools">
+            <a href="#">Em qualquer data</a>
+            <img
+              src="./assets/icons/arrow_drop_down.svg"
+              alt="Seta para baixo"
+            />
+          </div>
+          <div class="link-tools">
+            <a href="#">Todos os resultados</a>
+            <img
+              src="./assets/icons/arrow_drop_down.svg"
+              alt="Seta para baixo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="box-content">
+          <div class="site-title">
+            <p><a href="#">https://www.wix.com/</a></p>
+            <h2>
+              <a href="#">Build Your Own Website</a>
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laboriosam, maiores. Et earum recusandae fuga esse tenetur,
+            voluptatem error, expedita minima repellendus illum totam eaque. Ex
+            rem ipsam accusamus cum facere.
+          </p>
+        </div>
+        <div class="box-content">
+          <div class="site-title">
+            <p><a href="#">https://victor-lf.github.io</a></p>
+            <h2>
+              <a href="#">build this webpage - GitHub Pages</a>
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+            repudiandae reiciendis libero cupiditate, quasi pariatur inventore,
+            quam reprehenderit natus tempora corporis doloremque doloribus ut
+            voluptas consequuntur commodi? Eum, iste sit.
+          </p>
+        </div>
+        <div class="box-content">
+          <div class="site-title">
+            <p><a href="#">https://www.squarespace.com</a></p>
+            <h2>
+              <a href="#">Squarespace: Build a Website – Website Builder</a>
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex
+            totam, recusandae aliquam incidunt eos neque autem voluptatibus cum
+            dolor dignissimos, enim fugiat quis ut officiis! Saepe cupiditate
+            debitis dignissimos?
+          </p>
+        </div>
+        <div class="box-content">
+          <div class="site-title">
+            <p><a href="#">https://www.wix.com/</a></p>
+            <h2>
+              <a href="#">Build Your Own Website</a>
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex
+            totam, recusandae aliquam incidunt eos neque autem voluptatibus cum
+            dolor dignissimos, enim fugiat quis ut officiis! Saepe cupiditate
+            debitis dignissimos?
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
