@@ -125,8 +125,14 @@ header button:hover {
   text-align: center;
 }
 
+.box-button-apps {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0 1rem;
+}
+
 .box-apps button {
-  width: 115.05px;
   height: 32px;
   font: 0.9rem 'Arial', sans-serif;
   background: #1a73e8;
@@ -134,7 +140,6 @@ header button:hover {
   border: none;
   border-radius: 0.2rem;
   cursor: pointer;
-  grid-template-columns: 7/8;
 }
 
 section {
