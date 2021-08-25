@@ -52,6 +52,16 @@ buttonApps.addEventListener('click', () => {
   appearApps()
 })
 
+// pegar o value do input da homepage e enviar para a search_result
+function catchValue() {
+  console.log(input.value)
+  if (input.value === '') {
+    return
+  } else {
+    window.location.href = '../search_result.html'
+  }
+}
+
 // mudar os cores dos links quando clicados
 function changeColorLinks(value) {
   document.querySelectorAll('[data-color]').forEach(item => {
@@ -66,13 +76,13 @@ function changeColorLinks(value) {
   })
 }
 
-boxTools.addEventListener('click', () => {
-  const buttonTools = document.querySelector('.tools button')
-  const paragraphTools = document.querySelector('.p')
-  const menuTools = document.querySelector('.menu-tools')
-
-  buttonTools.classList.toggle('button-actived')
-  paragraphTools.classList.toggle('no-actived')
-  menuTools.classList.toggle('actived')
-})
+function animationTools() {
+    const buttonTools = document.querySelector('.tools button')
+    const paragraphTools = document.querySelector('.p')
+    const menuTools = document.querySelector('.menu-tools')
+  
+    buttonTools.classList.toggle('button-actived')
+    paragraphTools.classList.toggle('no-actived')
+    menuTools.classList.toggle('actived')
+}
 
