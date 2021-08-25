@@ -3,6 +3,7 @@ const clear = document.querySelector('.clear')
 let main = document.querySelector('main')
 const apps = document.querySelector('.apps-google')
 const buttonApps = document.querySelector('.button-apps')
+const boxTools = document.querySelector('.tools')
 
 function appearApps() {
   buttonApps.classList.toggle('button-actived')
@@ -64,3 +65,14 @@ function changeColorLinks(value) {
     }
   })
 }
+
+boxTools.addEventListener('click', () => {
+  const buttonTools = document.querySelector('.tools button')
+  const paragraphTools = document.querySelector('.p')
+  const menuTools = document.querySelector('.menu-tools')
+
+  buttonTools.classList.toggle('button-actived')
+  paragraphTools.classList.toggle('no-actived')
+  menuTools.classList.toggle('actived')
+})
+

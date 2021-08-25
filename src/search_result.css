@@ -317,11 +317,17 @@ nav .navigation {
 }
 
 .about .p {
-    display: none;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transform: translateY(0);
+    transition: 220ms cubic-bezier(0.5, 0.28, 0.13, 0.91);
 }
 
-.about .p.actived {
-    display: block
+.about .p.no-actived {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px)
 }
 
 .about .p p {
@@ -329,12 +335,21 @@ nav .navigation {
 }
 
 .about .menu-tools {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 147px;
+    background: #fff;
+    transform: translateY(-20px);
+    transition: 220ms cubic-bezier(0.5, 0.28, 0.13, 0.91);
 }
 
 .about .menu-tools.actived {
-    display: flex;
-    gap: 1rem
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0)
 }
 
 .menu-tools .link-tools {
