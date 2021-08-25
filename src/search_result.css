@@ -148,6 +148,10 @@ body {
     background: hsl(0, 0%, 95%);
 }
 
+.links-login a:nth-child(2) {
+    position: relative;
+}
+
 .links-login a img {
     width: 25px;
     height: 25px;

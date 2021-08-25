@@ -1,0 +1,77 @@
+.apps-google {
+    display: none;
+}
+  
+.apps-google.box-actived {
+    width: 309px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    z-index: 999;
+    right: 1%;
+}
+  
+.box-apps {
+    height: 400px;
+    background: #fff;
+    padding-top: 1rem;
+    padding-left: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 6px 0 hsl(0deg 0% 50%);
+    overflow-y: scroll;
+}
+  
+.box-apps::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+  
+.box-apps::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: hsl(0, 0%, 85%);
+}
+
+.apps {
+    width: 85px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    cursor: pointer;
+}
+  
+.apps:hover {
+    background: hsl(218, 92%, 95%);
+    border-radius: 0.5rem;
+}
+  
+.apps img {
+    width: 90%;
+}
+  
+.apps p {
+    font: 0.9rem 'Arial', sans-serif;
+    text-align: center;
+}
+  
+.box-button-apps {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 1rem;
+}
+  
+.box-apps button {
+    height: 32px;
+    font: 0.9rem 'Arial', sans-serif;
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
