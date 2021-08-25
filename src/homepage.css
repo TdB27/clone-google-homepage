@@ -223,6 +223,33 @@ section .img-google {
   outline: none;
 }
 
+.input a {
+  display: flex;
+}
+
+[aria-label] {
+  position: relative;
+}
+
+[aria-label]::after {
+  content: attr(aria-label);
+  /* width: 100%; */
+  display: none;
+  position: absolute;
+  top: 150%;
+  z-index: 5000;
+  pointer-events: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: rgb(29, 29, 29);
+}
+
+[aria-label]:hover::after {
+  display: block;
+}
+
 .btns {
   margin: 0 auto;
   padding-top: 20px;
