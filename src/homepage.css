@@ -37,7 +37,7 @@ header nav a:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
-  clip-path: circle();
+  border-radius: 2rem;
   position: relative;
 }
 
@@ -231,13 +231,13 @@ section .img-google {
   position: relative;
 }
 
+header nav a:nth-child(3)[aria-label]::after,
 [aria-label]::after {
   content: attr(aria-label);
-  /* width: 100%; */
   display: none;
   position: absolute;
   top: 150%;
-  z-index: 5000;
+  z-index: 900;
   pointer-events: none;
   padding: 8px 10px;
   text-decoration: none;
@@ -246,6 +246,12 @@ section .img-google {
   background-color: rgb(29, 29, 29);
 }
 
+header nav a:nth-child(3)[aria-label]::after {
+  top: 130%;
+  border-radius: .3rem;
+}
+
+header nav a:nth-child(3)[aria-label]:hover::after,
 [aria-label]:hover::after {
   display: block;
 }
