@@ -52,16 +52,6 @@ buttonApps.addEventListener('click', () => {
   appearApps()
 })
 
-// pegar o value do input da homepage e enviar para a search_result
-function catchValue() {
-  console.log(input.value)
-  if (input.value === '') {
-    return
-  } else {
-    window.location.href = '../search_result.html'
-  }
-}
-
 // mudar os cores dos links quando clicados
 function changeColorLinks(value) {
   document.querySelectorAll('[data-color]').forEach(item => {
@@ -84,5 +74,40 @@ function animationTools() {
     buttonTools.classList.toggle('button-actived')
     paragraphTools.classList.toggle('no-actived')
     menuTools.classList.toggle('actived')
+}
+
+// guardar o valor no Local Storage
+const Storage = {
+  get() {
+    return JSON.parse(localStorage.getItem('Valores da Pesquisa')) || []
+  },
+
+  set(sendValueInput) {
+    localStorage.setItem(
+      'Valores da Pesquisa',
+      JSON.stringify(sendValueInput)
+    )
+  }
+}
+
+// enviar e pegar o valor do input no Local Storage
+const sendCatchValuesInput = {
+  sendValue() {
+    let sendValueInput = document.querySelector('.send-value').value
+  
+    if (sendValueInput === '') {
+      return
+    } else {
+      Storage.set(sendValueInput)
+      window.location.href = '../search_result.html?mySearch='+sendValueInput
+    }
+  },
+
+  catchValue(){
+    let receiveValue = document.querySelector('.receive-value')
+    receiveValue.value = Storage.get()
+    clear.classList.add('box-actived')
+    clearInput()
+  }
 }
 
