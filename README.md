@@ -1,2 +1,2 @@
 # google-homepage
-create google homepage
+create a clone of google homepage
