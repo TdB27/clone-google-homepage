@@ -172,6 +172,7 @@ header nav a:nth-child(3)[aria-label]::after,
 header nav a:nth-child(3)[aria-label]::after {
   top: 130%;
   border-radius: .3rem;
+  z-index: 1000;
 }
 
 header nav a:nth-child(3)[aria-label]:hover::after,
