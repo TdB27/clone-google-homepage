@@ -99,7 +99,7 @@ const sendCatchValuesInput = {
       return
     } else {
       Storage.set(sendValueInput)
-      window.location.href = '../search_result.html?mySearch='+sendValueInput
+      window.location.href = 'https://tdb27.github.io/search_result.html?mySearch='+sendValueInput
     }
   },
 
